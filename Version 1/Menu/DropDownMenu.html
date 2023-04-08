@@ -1,0 +1,66 @@
+<html>
+    <head>
+        <title>Menu-Bar</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .dropdown {
+            display: flex;
+            align-content: center;
+            padding: 20px;
+            list-style-type: none;
+        }
+        header {
+            
+            padding: 20px;
+            background-color: black;
+            color: white;
+        }
+        a {
+            display: block;
+            width: 150px;
+            background-color: blueviolet;
+            color: white;
+            text-decoration: none;
+            align-content: center;
+        }
+        nav {
+                padding: 2px;
+                text-align: center;
+                background-color: blueviolet;
+            }
+        a:hover{
+            background-color: black;
+        }
+        .Aboutus {
+            list-style-type: none;
+            display: none;
+        
+        }
+        .dropdown li:nth-child(3):hover .Aboutus{
+            display: block;
+            box-shadow: 10px;
+        }
+    </style>
+    </head>
+    <body>
+        <header><h2> Complaint Management System</h2></header>
+       <nav>
+        <div class="container">
+        <ul class="dropdown">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">About Us &dtrif;</a>
+            <ul class="Aboutus">
+                <li><a href="#">FAQ</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </li> </ul>
+            <li><a href="#">Login/Sign Up</a></li>
+        </ul>
+        </div>
+        </nav>
+    </body>
+</html>

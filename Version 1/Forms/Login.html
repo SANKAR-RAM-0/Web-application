@@ -1,0 +1,126 @@
+<html>
+  <head>
+    <style>
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+body{
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  animation-name: example; 
+  animation-duration: 9s; 
+  animation-delay: 0s; 
+  animation-iteration-count: 10; 
+  animation-play-state: running; 
+}
+@keyframes example { 
+from {background-color: white;} 
+to {background-color: blueviolet;} 
+} 
+.container{
+  max-width: 500px;
+  width: 80%;
+  background-color: black;
+  padding: 20px 30px;
+  border-radius: 5px;
+  box-shadow: 0 5px 10px black;
+}
+.container .title{
+  font-size: 25px;
+  font-weight: 500;
+  position: relative;
+  text-align: center;
+  color: white;
+}
+.content .user-details{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 20px 0 12px 0;
+}
+.user-details .input-box{
+  margin-bottom: 15px;
+  width:80%;
+}
+.user-details .input-box input{
+  height: 45px;
+  width: 100%;
+  outline: none;
+  font-size: 16px;
+  border-radius: 5px;
+  padding-left: 15px;
+  border: 1px solid #ccc;
+  border-bottom-width: 2px;
+}
+.user-details .input-box input:focus,
+.user-details .input-box input:valid{
+  border-color: blueviolet;
+}
+a:hover {
+  color: blueviolet;
+}
+a:visited {
+  color: white;
+}
+.button{
+   height: 45px;
+   margin: 20px 
+ }
+.button input{
+   height: 100%;
+   width: 70%;
+   border-radius: 4px;
+   border: none;
+   color: white;
+   font-size: 18px;
+   font-weight: 500;
+   letter-spacing: 1px;
+   cursor: pointer;
+   background-color: blueviolet;
+ }
+.button input:hover {
+  color:darkgray;
+}
+ .link{
+  text-decoration: none;
+  padding-left: 25px;
+ }
+</style>
+<script type="text/javascript" src="/Forms/Script.js"></script>
+</head>
+<body>
+  <div class="container">
+    <div class="title">Login Page</div>
+    <div class="content">
+
+      <form onsubmit="signIn(event)" action="Homepage.html" method="post">
+        <div class="user-details">
+          <div class="input-box">
+            <span class="details">Mail</span>
+            <input type="text" name="email" id="email" placeholder="Enter your mail" >
+          </div>
+          <div class="input-box">
+            <span class="details">Password</span>
+            <input type="text" name="pwd" id="pwd" placeholder="Enter your password">
+          </div>
+          <div style="padding-left:15px; ">
+            <a href="">Forgot Password</a></div>
+        </div>
+        <div class="button">
+          <input type="submit" value="Login">
+        </div>
+        <div class="Link">
+        <a href="AdminLogin.html" >Admin</a>
+        &nbsp;&nbsp;
+          <a href="rform.html"> New User? Sign-Up!</a></div>
+      </form>
+    </div>
+  </div>
+</body>
+</html>

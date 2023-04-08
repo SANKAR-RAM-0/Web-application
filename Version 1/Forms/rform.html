@@ -1,0 +1,47 @@
+<html>
+  <head>
+    <title>Sign-Up Page</title>
+    <link rel="stylesheet" href="style.css">
+    <script type="text/javascript" src="/Forms/Script.js"></script>
+   </head>
+<body>
+  <div class="container">
+    <div class="title">Sign Up</div>
+    <div class="content">
+      <form name="myForm" role="form" onsubmit="return (validateForm() && signUp(event))" action="/Forms/Login.html" method="post">
+        <div class="user-details">
+          <div class="input-box">z
+            <span class="details">First Name</span>
+            <input type="text" name="fname" id="fname" placeholder="Enter your first name">
+          </div>
+          <div class="input-box">
+            <span class="details">Last Name</span>
+            <input type="text" name="lname" id="lname" placeholder="Enter your last name">
+          </div>
+          <div class="input-box">
+            <span class="details">Email</span>
+            <input type="text" name="email" id="email" placeholder="Enter your email">
+          </div>
+          <div class="input-box">
+            <span class="details">Phone Number</span>
+            <input type="text" name="phoneno" placeholder="Enter your number">
+          </div>
+          <div class="input-box">
+            <span class="details">Password</span>
+            <input type="text" name="password" id="password" placeholder="Enter your password">
+          </div>
+          <div class="input-box">
+            <span class="details">Confirm Password</span>
+            <input type="text" name="password1" placeholder="Confirm your password">
+          </div>
+        </div>
+        <div class="button">
+          <input type="submit" value="Register">
+        </div>
+        <div class="Link">
+          Already have an account? <a href="Login.html">Login!</a></div>
+      </form>
+    </div>
+  </div>
+</body>
+</html>
