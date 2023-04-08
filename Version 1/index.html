@@ -1,0 +1,92 @@
+<html>
+    <head>
+        <title>CMS</title>
+        <link rel="stylesheet" href="Homepagestyle.css">
+    </head>
+<body>
+       <header>
+        <h1 id="text"  onmouseover="setnewtext()" onmouseout="setoldtext()">Complaint Management System</h1></header>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Grievance page</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="/Forms/Login.html">Login</a></li>
+                <li><a href="/Forms/rform.html">Sign Up</a></li>
+            </ul>
+        </nav>
+
+       <section>
+        <h2>What is Complaint Management?</h2>
+        <p>Complaint management is the process of handling, managing, responding to, and reporting customer 
+            grievances.<br> This process has a streamlined approach 
+            and constant monitoring to ensure faster resolutions.
+        <h2>How to use</h2>
+           1. Create an account by registering or using google.<br>
+            2. Go to the Grievance page to upload your complaint.<br> 
+            3. You can add images while filing your complaint.<br> 
+            4. After that you can able to see the complaint details in the dashboard.<br>
+            5. You can see how much your complaint is processed in the dashboard.<br>
+       </p>
+       <div class="image-container">
+
+        <div class="Slide fade">
+          <img src="/Images/slide1.png" style="width:60%" >
+        </div>
+        
+        <div class="Slide fade">
+          <img src="/Images/slide2.png" style="width:60%">
+        </div>
+        
+        <div class="Slide fade">
+          <img src="/Images/slide3.png" style="width:60%">
+        </div>
+        </div>
+        <br>
+        
+        <div style="text-align:center">
+          <span class="dot"></span> 
+          <span class="dot"></span> 
+          <span class="dot"></span> 
+        </div>
+    </section>
+    
+       <footer>
+        <p style="color:white;"> Website is still in development stage
+        </p>
+       </footer>
+    </body>
+    <script>
+        function setnewtext() {
+            document.getElementById('text').innerHTML="Welcome to Complaint Management System !!"
+        }
+        function setoldtext() {
+            document.getElementById('text').innerHTML="Complaint Management System"
+        }
+
+let slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  let i;
+  let slides = document.getElementsByClassName("Slide");
+  let dots = document.getElementsByClassName("dot");
+
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}    
+
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+  setTimeout(showSlides, 3000); 
+}
+
+    </script>
+</html>

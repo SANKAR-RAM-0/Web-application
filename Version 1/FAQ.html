@@ -1,0 +1,92 @@
+<html>
+    <head>
+            <title>About Us</title>
+    <style>
+* {
+  font-family: helvetica;
+}
+body {
+    margin: 0;
+}
+header {
+    padding: 20px;
+     background-color: blueviolet;
+    color: white;
+}
+section {
+    padding: 100px;
+    background-color: white;
+    background-size: cover;
+     color: black;
+}
+img {
+    padding-left: 700;
+}
+.extra {
+     display: block;
+    text-align: center;
+    margin: 10px;
+}
+ul {
+    margin: 0;
+    padding: 0;
+}
+li {
+    display: inline-block;
+    margin-right: 20px;
+}
+nav {
+    padding: 25px;
+    text-align: right;
+    background-color: black;
+    display: block;
+}
+a {
+    color: white;
+    text-decoration: none;
+    display: block;
+}
+a:hover {
+    color: blueviolet;
+}
+.Aboutus {
+  list-style-type: none;
+  display: none;
+  position: absolute;
+  text-align: center;
+
+}
+.dropdown li:nth-child(3):hover .Aboutus{
+  display: block;
+  box-shadow: 10px;
+  background-color: black;
+}
+</style>
+    </head>
+
+    <body>
+        <header>
+            <h1><b>FAQ</b></h1>
+        </header>
+        <nav>
+            <ul class="dropdown">
+                <li><a href="Homepage.html">Home</a></li>
+                <li><a href="Grievance-page.html">Grievance filling page</a></li>
+                <li><a href="#">About Us &dtrif;</a>
+                <ul class="Aboutus">
+                    <li class="extra"><a href="./FAQ.html">FAQ</a></li>
+                    <li class="extra"><a href="Contact.html">Contact Us</a></li>
+                </li> </ul>
+                <li><a href="Forms/Login.html">Login</a></li>
+                
+            </ul>
+            </nav>
+        <section>
+            <h4>1. Appeals VS Complaints</h4>
+            <video width="500" height="300" controls autoplay>
+                <source src="Images/Complaint_Animation.mp4" type="video/mp4"/> 
+            </video><br>
+        </section>
+    </body>
+
+</html>

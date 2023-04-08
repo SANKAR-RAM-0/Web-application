@@ -1,0 +1,133 @@
+* {
+  font-family: helvetica;
+}
+body {
+   background-color: white;
+   margin: 0;
+   padding: 0;
+   width: 100%;
+}
+header { 
+    background-size: auto;
+    background-color: blueviolet;
+    padding: 20px;
+    text-align-last: right;
+    color: white;
+}
+.extra {
+  display: block;
+  text-align: center;
+  margin: 10px;
+}
+ul {
+    margin: 0;
+    padding: 0;
+}
+li {
+    display: inline-block;
+    margin-right: 20px;
+}
+nav {
+    padding: 25px;
+    text-align: right;
+    background-color: black;
+    display: block;
+}
+a {
+    color: white;
+    text-decoration: none;
+    display: block;
+}
+.Aboutus {
+  list-style-type: none;
+  display: none;
+  position: absolute;
+  text-align: center;
+
+}
+.dropdown li:nth-child(3):hover .Aboutus{
+  display: block;
+  box-shadow: 10px;
+  background-color: black;
+}
+footer {
+    background-color: black;
+    padding: 20px;
+    text-align-last: center;
+    margin-bottom: -150px;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+a:hover {
+  color: blueviolet;
+}
+
+.heading1 h2 {
+  font-size: 1.01cm;
+  margin-top: 8%;
+  margin-bottom: -1px;
+  padding: 0px;
+  animation-name: heading;
+  animation-duration: 0.9s;
+}
+.heading1 p {
+  margin-left: 16%;
+  width: 78%;
+  font-size: larger;
+  animation-name: heading;
+  animation-duration: 1s;
+}
+.heading1{
+  margin-bottom: 4%;
+  padding-bottom: 5%;
+}
+@keyframes heading {
+  from {transform: translateX(-100px); visibility: visible;}
+  to {transform: translateX(0); visibility: visible;}
+}
+.head-image{
+  width: 40%;
+  float: left;
+  display: block;
+  margin-top: -120px;  
+}
+
+.how-to{
+  background-color: white;
+  margin-top: 140px;
+  padding:20px; 
+  text-align: left;
+  margin-bottom: 100px;
+}
+.how-to h2{
+  margin-left: 80px;
+}
+.how-to p {
+  margin-left: 90px;
+  font-size: larger;
+}
+.how-to-image {
+  width: 45%;
+  float: right;
+  display: block;
+  margin-right: -20px;
+  margin-top: 0px;
+}
+
+.whats-next {
+  margin: 120px;
+  
+}
+.whats-next-image {
+  width: 49%;
+  float: left;
+  display: block;
+  margin-left: -60px;  
+}
+.whats-next p {
+  font-size:large;
+  width: 89%;
+  
+}

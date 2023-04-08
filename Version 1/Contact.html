@@ -1,0 +1,144 @@
+<html>
+    <head>
+            <title>About Us</title>
+<style>
+* {
+  font-family: helvetica;
+}
+body {
+    margin: 0;
+}
+header {
+    padding: 20px;
+    background-color: blueviolet;
+    color: white;
+}
+section {
+    padding: 150px;
+    background-color: white;
+    background-size: cover;
+    color: white;
+}
+img {
+    padding-left: 700;
+}
+.extra {
+    display: block;
+    text-align: center;
+    margin: 10px;
+}
+ul {
+    margin: 0;
+    padding: 0;
+}
+li {
+    display: inline-block;
+    margin-right: 20px;
+}
+nav {
+    padding: 25px;
+    text-align: right;
+    background-color: black;
+    display: block;
+}
+a {
+    color: white;
+    text-decoration: none;
+    display: block;
+}
+a:hover {
+    color: blueviolet;
+}
+.Aboutus {
+  list-style-type: none;
+  display: none;
+  position: absolute;
+  text-align: center;
+
+}
+.dropdown li:nth-child(3):hover .Aboutus{
+  display: block;
+  box-shadow: 10px;
+  background-color: black;
+}   
+
+
+/* Style inputs with type="text", select elements and textareas */
+input[type=text], select, textarea {
+  width: 30%; /* Full width */
+  padding: 12px; /* Some padding */ 
+  border: 1px solid gray; /* Gray border */
+  border-radius: 4px; /* Rounded borders */
+  box-sizing: border-box; /* Make sure that padding and width stays in place */
+  margin-top: 6px; /* Add a top margin */
+  margin-bottom: 16px; /* Bottom margin */
+  resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+}
+
+/* Style the submit button with a specific background color etc */
+input[type=submit] {
+  background-color: black;
+  color: white;
+  padding: 12px 40px;
+  margin-left: 100px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* When moving the mouse over the submit button, add a darker green color */
+input[type=submit]:hover {
+  background-color: blueviolet;
+}
+
+/* Add a background color and some padding around the form */
+.container {
+  border-radius: 5px;
+  margin: auto;
+  background-color: #f2f2f2;
+  padding: 20px;
+  padding-left: 555px;
+}
+</style>
+</head>
+    <body>
+        <header>
+            <h1><b>Contact Us</b></h1>
+        </header>
+        <nav>
+            <ul class="dropdown">
+                <li><a href="Homepage.html">Home</a></li>
+                <li><a href="Grievance-page.html">Grievance filling page</a></li>
+                <li><a href="#">About Us &dtrif;</a>
+                <ul class="Aboutus">
+                    <li class="extra"><a href="./FAQ.html">FAQ</a></li>
+                    <li class="extra"><a href="Contact.html">Contact Us</a></li>
+                </li> </ul>
+                <li><a href="Forms/Login.html">Login</a></li>
+                <li><a href="Forms/rform.html">Sign-up</a></li>
+            </ul>
+            </nav>
+            <h1 style="text-align: center;">GET IN TOUCH</h1>
+            <div class="container">
+                <form action="action_page.php">
+              
+                  <label for="fname">First Name</label>
+                  <input type="text" id="fname" name="firstname" placeholder="Your name.."><br>
+              
+                  <label for="lname">Last Name</label>
+                  <input type="text" id="lname" name="lastname" placeholder="Your last name.."><br>
+              
+                  &nbsp;<label for="pnumber">Phone No </label>
+                  <input type="text" id="phone" name="phoneno" placeholder="Your phone number.."><br>
+              
+                  &nbsp;&nbsp;&nbsp;&nbsp;<label for="subject">Subject</label>
+                  <input type="text" id="subject" name="subject" placeholder="Write something.."><br>
+                  
+                  <br>
+              
+                  <input type="submit" value="Send">
+              
+                </form>
+              </div>
+    </body>
+</html>
